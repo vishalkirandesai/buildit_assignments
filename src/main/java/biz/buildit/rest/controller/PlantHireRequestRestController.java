@@ -216,7 +216,9 @@ public class PlantHireRequestRestController{
 		purchaseOrder.setPoId(poId);
 		purchaseOrder.persist();
 		plantHireRequest.setPurchaseOrder(purchaseOrder);
-		plantHireRequest.setPurchaseOrderURI(clientResponse.getLocation());
+		URI uri = clientResponse.getLocation();
+		plantHireRequest.setPurchaseOrderURI(uri);
+		plantHireRequest.persist();
 		return true;
 		
 	}

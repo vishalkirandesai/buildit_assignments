@@ -1,0 +1,66 @@
+<aspectj>
+<aspects>
+<aspect name="biz.buildit.main.Plant_Roo_Configurable"/>
+<aspect name="biz.buildit.rest.SiteEngineerResource_Roo_JavaBean"/>
+<aspect name="biz.buildit.web.WorksEngineerController_Roo_Controller"/>
+<aspect name="biz.buildit.security.Assignments_Roo_ToString"/>
+<aspect name="biz.buildit.main.Plant_Roo_ToString"/>
+<aspect name="biz.buildit.main.Invoice_Roo_ToString"/>
+<aspect name="biz.buildit.main.PlantHireRequest_Roo_Jpa_Entity"/>
+<aspect name="biz.buildit.main.PurchaseOrder_Roo_Jpa_Entity"/>
+<aspect name="biz.buildit.repository.WorksEngineerRepository_Roo_Jpa_Repository"/>
+<aspect name="biz.buildit.rest.InvoiceResource_Roo_JavaBean"/>
+<aspect name="biz.buildit.main.Invoice_Roo_Jpa_ActiveRecord"/>
+<aspect name="biz.buildit.main.SiteEngineer_Roo_Jpa_ActiveRecord"/>
+<aspect name="biz.buildit.web.PlantCatalogueController_Roo_Controller"/>
+<aspect name="biz.buildit.security.Users_Roo_JavaBean"/>
+<aspect name="biz.buildit.main.PurchaseOrder_Roo_Configurable"/>
+<aspect name="biz.buildit.main.Invoice_Roo_Jpa_Entity"/>
+<aspect name="biz.buildit.main.WorksEngineer_Roo_Jpa_ActiveRecord"/>
+<aspect name="biz.buildit.main.PlantHireRequest_Roo_Configurable"/>
+<aspect name="biz.buildit.security.Users_Roo_Configurable"/>
+<aspect name="biz.buildit.main.PurchaseOrder_Roo_Jpa_ActiveRecord"/>
+<aspect name="biz.buildit.main.WorksEngineer_Roo_ToString"/>
+<aspect name="biz.buildit.main.WorksEngineer_Roo_Jpa_Entity"/>
+<aspect name="biz.buildit.main.Plant_Roo_JavaBean"/>
+<aspect name="biz.buildit.main.Plant_Roo_Jpa_ActiveRecord"/>
+<aspect name="biz.buildit.rest.PurchaseOrderResource_Roo_JavaBean"/>
+<aspect name="biz.buildit.web.SiteEngineerController_Roo_Controller"/>
+<aspect name="biz.buildit.security.Assignments_Roo_Jpa_ActiveRecord"/>
+<aspect name="biz.buildit.web.we.PHRWEController_Roo_Controller"/>
+<aspect name="biz.buildit.main.PlantHireRequest_Roo_Jpa_ActiveRecord"/>
+<aspect name="biz.buildit.main.Invoice_Roo_Configurable"/>
+<aspect name="biz.buildit.repository.PlantRepository_Roo_Jpa_Repository"/>
+<aspect name="biz.buildit.rest.PlantResource_Roo_JavaBean"/>
+<aspect name="biz.buildit.rest.WorksEngineerResource_Roo_JavaBean"/>
+<aspect name="biz.buildit.main.PurchaseOrder_Roo_ToString"/>
+<aspect name="biz.buildit.rest.PurchaseOrderResourceList_Roo_JavaBean"/>
+<aspect name="biz.buildit.main.PlantHireRequest_Roo_ToString"/>
+<aspect name="biz.buildit.security.Assignments_Roo_JavaBean"/>
+<aspect name="biz.buildit.rest.PlantHireRequestResourceList_Roo_JavaBean"/>
+<aspect name="biz.buildit.main.SiteEngineer_Roo_Configurable"/>
+<aspect name="biz.buildit.web.PlantHireRequestController_Roo_Controller"/>
+<aspect name="biz.buildit.main.SiteEngineer_Roo_Jpa_Entity"/>
+<aspect name="biz.buildit.rest.PlantResourceList_Roo_JavaBean"/>
+<aspect name="biz.buildit.repository.SiteEngineerRepository_Roo_Jpa_Repository"/>
+<aspect name="biz.buildit.repository.PlantHireRequestRepository_Roo_Jpa_Repository"/>
+<aspect name="biz.buildit.rest.PlantHireRequestResource_Roo_JavaBean"/>
+<aspect name="biz.buildit.security.Users_Roo_Jpa_Entity"/>
+<aspect name="biz.buildit.main.Plant_Roo_Jpa_Entity"/>
+<aspect name="biz.buildit.main.Invoice_Roo_JavaBean"/>
+<aspect name="biz.buildit.main.SiteEngineer_Roo_ToString"/>
+<aspect name="biz.buildit.security.Assignments_Roo_Jpa_Entity"/>
+<aspect name="biz.buildit.web.PurchaseOrderController_Roo_Controller"/>
+<aspect name="biz.buildit.main.WorksEngineer_Roo_Configurable"/>
+<aspect name="biz.buildit.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="biz.buildit.web.InvoiceController_Roo_Controller"/>
+<aspect name="biz.buildit.main.PurchaseOrder_Roo_JavaBean"/>
+<aspect name="biz.buildit.security.Users_Roo_Jpa_ActiveRecord"/>
+<aspect name="biz.buildit.main.PlantHireRequest_Roo_JavaBean"/>
+<aspect name="biz.buildit.web.AssignmentsController_Roo_Controller"/>
+<aspect name="biz.buildit.security.Assignments_Roo_Configurable"/>
+<aspect name="biz.buildit.web.UsersController_Roo_Controller"/>
+<aspect name="biz.buildit.security.Users_Roo_ToString"/>
+</aspects>
+</aspectj>
+
