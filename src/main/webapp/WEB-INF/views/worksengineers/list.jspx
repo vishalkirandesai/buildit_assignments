@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_biz_buildit_main_WorksEngineer" items="${worksengineers}" z="zRnLPOGXNuDYGYMaY39vxkxxk14=">
+        <table:table data="${worksengineers}" id="l_biz_buildit_main_WorksEngineer" path="/worksengineers" z="R7iTR2+EASCSGnpdHnXXb/3+Jak=">
+            <table:column id="c_biz_buildit_main_WorksEngineer_username" property="username" z="8o8T5vcF5DCs/dye76SwVrtiE3I="/>
+            <table:column id="c_biz_buildit_main_WorksEngineer_password" property="password" z="MgWsjj6n/o9Ndpa9WSOEFPEsXak="/>
+            <table:column id="c_biz_buildit_main_WorksEngineer_enabled" property="enabled" z="Ry8ZhMgP8jorSMgqf37Hip/FTd8="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_biz_buildit_main_PurchaseOrder" items="${purchaseorders}" z="EBFGQwR32QQGHl6S/FrvO40BTnY=">
+        <table:table data="${purchaseorders}" delete="false" id="l_biz_buildit_main_PurchaseOrder" path="/purchaseorders" update="false" z="UUQYoPCtxQjX13OS5Dc2zHC16zA=">
+            <table:column date="true" dateTimePattern="${purchaseOrder_startdate_date_format}" id="c_biz_buildit_main_PurchaseOrder_startDate" property="startDate" z="VmYyfkr4d2jePltc7FLOVMDW4VE="/>
+            <table:column date="true" dateTimePattern="${purchaseOrder_enddate_date_format}" id="c_biz_buildit_main_PurchaseOrder_endDate" property="endDate" z="3vxlHL8zAnX0XzOJxlpsloyxaps="/>
+            <table:column id="c_biz_buildit_main_PurchaseOrder_price" property="price" z="Oj6UOTOL/BFoyRJQwrcCXk/4RH0="/>
+            <table:column id="c_biz_buildit_main_PurchaseOrder_plant" property="plant" z="vLOEi/lcsv9qxqn5H+C4GJPiL8c="/>
+            <table:column id="c_biz_buildit_main_PurchaseOrder_siteId" property="siteId" z="y0ycsBRzyfM6rUfFGczgPab+LfE="/>
+            <table:column id="c_biz_buildit_main_PurchaseOrder_poId" property="poId" z="qMcUqg4V+5g2b/XEYyks23OksBg="/>
+        </table:table>
+    </page:list>
+</div>

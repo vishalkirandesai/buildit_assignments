@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show create="false" delete="false" id="ps_biz_buildit_main_PurchaseOrder" object="${purchaseorder}" path="/purchaseorders" update="false" z="KWL2+aTtxVGa621xt1paODMDVh0=">
+        <field:display date="true" dateTimePattern="${purchaseOrder_startdate_date_format}" field="startDate" id="s_biz_buildit_main_PurchaseOrder_startDate" object="${purchaseorder}" z="AjeGNhkHdjPePp6SA2sycJAV2+c="/>
+        <field:display date="true" dateTimePattern="${purchaseOrder_enddate_date_format}" field="endDate" id="s_biz_buildit_main_PurchaseOrder_endDate" object="${purchaseorder}" z="csFRNCIj/RLzyCOzgPjIS3h1mt4="/>
+        <field:display field="price" id="s_biz_buildit_main_PurchaseOrder_price" object="${purchaseorder}" z="MFCbvYkXkHlUuWFjPmdTiiHS5A8="/>
+        <field:display field="plant" id="s_biz_buildit_main_PurchaseOrder_plant" object="${purchaseorder}" z="eniEgGk+Km7MIxIl3evunssz9aM="/>
+        <field:display field="siteId" id="s_biz_buildit_main_PurchaseOrder_siteId" object="${purchaseorder}" z="lbKTlit6UCSuzImC6ZOcI6NCr94="/>
+        <field:display field="poId" id="s_biz_buildit_main_PurchaseOrder_poId" object="${purchaseorder}" z="/ru73wgUgE8/8WmqCtqWVNblLJI="/>
+        <field:display field="poStatus" id="s_biz_buildit_main_PurchaseOrder_poStatus" object="${purchaseorder}" z="VQ1adv2h0E07qasgI0S6eVk1zgQ="/>
+        <field:display field="invoice" id="s_biz_buildit_main_PurchaseOrder_invoice" object="${purchaseorder}" z="6PbhqGRdlttthF5LS8qwmtPtMpo="/>
+    </page:show>
+</div>

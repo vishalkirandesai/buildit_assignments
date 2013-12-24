@@ -1,0 +1,11 @@
+package biz.buildit.util;
+
+public enum POStatus{
+	PENDINGAPPROVAL,
+	ACCEPTED,
+	REJECTED,
+	DISPATCHED,
+	DELIVERED,
+	RETURNED,
+	RETURNONDELIVERY
+}

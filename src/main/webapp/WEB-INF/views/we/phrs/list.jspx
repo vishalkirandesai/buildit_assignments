@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_biz_buildit_main_PlantHireRequest" items="${planthirerequests}" z="th3ancgpZ/f99SQo8JHFsxCHyY8=">
+        <table:table data="${planthirerequests}" id="l_biz_buildit_main_PlantHireRequest" path="/we/phrs" z="1ukasjLlq/QibXT0IFVkPUKPS8A=">
+            <table:column id="c_biz_buildit_main_PlantHireRequest_siteId" property="siteId" z="BiTGGCVxXpn9QKwRNlHFbxG5wS0="/>
+            <table:column id="c_biz_buildit_main_PlantHireRequest_siteEng" property="siteEng" z="Hle4VuV427/OpKRD+hvqwM2vxmo="/>
+            <table:column id="c_biz_buildit_main_PlantHireRequest_wEng" property="WEng"/>
+            <table:column date="true" dateTimePattern="${plantHireRequest_startdate_date_format}" id="c_biz_buildit_main_PlantHireRequest_startDate" property="startDate" z="iTyHt3ecVQ22rtPrcHHQgvKDauc="/>
+            <table:column date="true" dateTimePattern="${plantHireRequest_enddate_date_format}" id="c_biz_buildit_main_PlantHireRequest_endDate" property="endDate" z="zsnJk1Y1nNfKbFfDKAeYiQ6LtPA="/>
+            <table:column date="true" dateTimePattern="${plantHireRequest_extensiondate_date_format}" id="c_biz_buildit_main_PlantHireRequest_extensionDate" property="extensionDate" z="RpkzX1F5+D13H4b9jwlVOj2DpG8="/>
+            <table:column id="c_biz_buildit_main_PlantHireRequest_comments" property="comments" z="7Gs6qPxfUqP/FEH2MZ8ug7Xvzfc="/>
+        </table:table>
+    </page:list>
+</div>

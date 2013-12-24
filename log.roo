@@ -1,0 +1,183 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-10-30 16:29:37
+project --topLevelPackage biz.buildit --projectName BuildIt --java 7 --packaging JAR
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-10-30 16:29:41
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-10-30 16:30:15
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-10-30 16:31:24
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-10-30 16:31:42
+persistence setup --database POSTGRES --provider HIBERNATE --databaseName buildit --password letmein --userName postgres --hostName localhost
+addon search postgres
+addon search postgres
+download status 
+download accept terms of use
+addon search postgres
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.postgresql-jdbc4
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install id 01
+entity jpa --class ~.main.SiteEngineer
+field number --fieldName id --type int
+field string --fieldName name 
+web mvc setup 
+web mvc all --package ~.web
+entity jpa --class ~.main.WorksEngineer
+field number --fieldName id --type int
+field string --fieldName name
+entity jpa --class ~.main.PlantHireRequest
+field number --fieldName id --type int
+field number --fieldName siteId --type int
+field reference --fieldName engId --type ~.main.SiteEngineer --cardinality MANY_TO_ONE 
+// [failed] field reference --fieldName plantId --type ~.main.PlantCatalogue --cardinality MANY_TO_ONE
+field date --fieldName startDate --type java.util.Date
+field date --fieldName endDate --type java.util.Date
+field date --fieldName extensionDate --type java.util.Date
+field number --fieldName price --type int
+field string --fieldName comments
+field string --fieldName approval
+entity jpa --class ~.main.PlantCatalogue
+field number --fieldName id --type int
+field number --fieldName price --type int
+field string --fieldName description
+field date --fieldName startDate --type java.util.Dat
+field date --fieldName endDate --type java.util.Date
+focus --class ~.main.PlantHireRequest
+field reference --fieldName plantId --type ~.main.PlantCatalogue --cardinality MANY_TO_ONE
+field reference --fieldName wEngId --type ~.main.WorksEngineer --cardinality MANY_TO_ONE
+entity jpa --class ~.main.Invoi
+entity jpa --class ~.main.Invoice
+field number --fieldName id --type int
+field reference --fieldName phrId --type ~.main.PlantHireRequest --cardinality ONE_TO_ONE 
+field date --fieldName dueDate --type java.util.Date
+field string --fieldName approval
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-10-30 17:08:26
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-10-30 17:08:41
+web mvc all --package ~.web
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-11-27 18:04:09
+repository jpa --interface ~.repository.PlantHireRequestRepository --entity ~.main.PlantHireRequest
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-11-27 19:52:22
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-11-28 19:22:15
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-11-28 23:54:44
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-11-28 23:57:17
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-11-30 01:16:29
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-11-30 01:26:00
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-11-30 01:36:13
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-11-30 01:47:52
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-01 12:11:22
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-01 15:01:29
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-01 15:53:30
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-01 16:35:06
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-05 11:43:48
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-05 14:26:24
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-05 19:14:18
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-06 17:54:21
+properties list --name database.properties --path SPRING_CONFIG_ROOT
+// [failed] entity jpa --class ~.main.PurchaseOrder
+// [failed] entity jpa --class ~.main.PurchaseOrder
+// [failed] entity jpa --class ~.main.PurchaseOrder
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-06 19:24:59
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-06 19:25:14
+entity jpa --class ~.main.PurchaseOrder
+field date --fieldName startDate --type java.util.Date
+field date --fieldName endDate --type java.util.Date
+field number --fieldName price --type float
+field reference --fieldName plant --type ~.main.Plant
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-06 20:03:47
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-07 11:34:35
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-07 16:38:18
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-08 14:12:39
+security setup
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-08 15:28:37
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-08 15:49:31
+entity jpa --class ~.security.Users
+field string --fieldName userName
+field string --fieldName password
+field boolean --fieldName enabled
+entity jpa --class ~.security.Authorities
+field string --fieldName authority
+entity jpa --class ~.security.Assignments
+// [failed] field reference --fieldName user --type ~.security.Users --cardinality ONE_TO_ONE 
+field reference --fieldName userBuildIt --type ~.security.Users --cardinality ONE_TO_ONE 
+field reference --fieldName authority --type ~.security.Authorities --cardinality ONE_TO_ONE 
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-08 22:56:30
+web mvc scaffold --class ~.web.UsersController --backingType ~.security.Users --path /security/users --disallowedOperations create,delete,update
+web mvc scaffold --class ~.web.UsersController --backingType ~.security.Users --path /security/users
+web mvc scaffold --class ~.web.UsersController --backingType ~.security.Users --path /security/users
+entity jpa --class ~.security.Authorities
+field string --fieldName authority
+web mvc scaffold --class ~.web.UsersController --backingType ~.security.Users --path /security/users
+web mvc scaffold --class ~.web.AuthoritiesController --backingType ~.security.Authorities --path /security/authorities
+web mvc scaffold --class ~.web.AssignmentsController --backingType ~.security.Assignments --path /security/assignments
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-09 00:44:35
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-09 12:47:00
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-09 12:56:39
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-09 21:02:18
+web mvc scaffold --class ~.web.UsersController --backingType ~.security.Users --path /security/users
+web mvc scaffold --class ~.web.UsersController --backingType ~.security.Users --path /security/users
+web mvc scaffold --class ~.web.UsersController --backingType ~.security.Users --path /security/users
+entity jpa --class ~.security.Users
+field string --fieldName userName
+field string --fieldName password
+field boolean --fieldName enabled
+web mvc scaffold --class ~.web.UsersController --backingType ~.security.Users --path /security/users
+entity jpa --class ~.security.Users
+field string --fieldName userName
+field string --fieldName password
+field boolean --fieldName enabled
+web mvc scaffold --class ~.web.UsersController --backingType ~.security.Users --path /security/users
+web mvc scaffold --class ~.web.se.PHRSEController --backingType ~.main.PlantHireRequest --path /se/phrs --disallowedOperations delete
+web mvc scaffold --class ~.web.we.PHRWEController --backingType ~.main.PlantHireRequest --path /we/phrs --disallowedOperations create
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-09 23:15:14
+entity jpa --class ~.security.Assignments
+field reference --fieldName userBuildIt --type ~.security.Users --cardinality ONE_TO_ONE 
+field reference --fieldName authority --type ~.security.Authorities --cardinality ONE_TO_ONE 
+web mvc scaffold --class ~.web.AssignmentsController --backingType ~.security.Assignments --path /security/authorities
+web mvc scaffold --class ~.web.AssignmentsController --backingType ~.security.Assignments --path /security/assignments
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-09 23:43:57
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-10 11:01:54
+repository jpa --interface ~.repository.SiteEngineerRepository --entity ~.main.SiteEngineer
+web mvc scaffold --class ~.web.PlantHireRequestController --backingType ~.main.PlantHireRequest
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-10 13:38:14
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-10 13:51:34
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-12 15:13:22
+focus --class ~.main.PlantHireRequest
+field reference --fieldName purchaseOrder --type ~.main.PurchaseOrder --cardinality ONE_TO_ONE 
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-12 18:47:44
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-12 18:47:54
+focus --class ~.main.PurchaseOrder
+// [failed] field enum --fieldName approval --type ~.util.Approval
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-12 18:50:55
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-12 18:51:05
+web mvc scaffold --class ~.web.PurchaseOrderController --backingType ~.main.PurchaseOrder --disallowedOperations create,update,delete
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-13 00:52:04
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-13 12:44:24
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-14 01:20:12
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-14 18:30:54
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-14 18:47:01
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-14 18:47:14
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-14 18:53:48
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-14 18:54:06
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-14 18:56:14
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-14 18:56:25
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-14 19:27:50
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-14 19:30:40
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-14 19:38:43
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-14 23:13:03
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-15 13:58:25
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-15 13:58:44
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-15 13:59:01
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-15 14:01:20
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-15 19:22:31
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-16 06:30:42
+repository jpa --interface ~.repository.PlantRepository --entity ~.main.Plant 
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-16 07:48:45
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-18 01:31:34
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-18 01:59:30
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-18 15:44:07
+repository jpa --interface ~.repository.WorksEngineerRepository --entity ~.main.WorksEngineer
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-18 17:30:36
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-18 17:41:13
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-18 23:41:39
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-19 07:50:02
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-19 07:51:54
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-19 07:52:34
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-12-19 08:58:41
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-12-23 17:33:01

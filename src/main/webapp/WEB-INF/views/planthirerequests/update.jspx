@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_biz_buildit_main_PlantHireRequest" modelAttribute="plantHireRequest" path="/planthirerequests" versionField="Version" z="wqfriuunb3r7Bly4AFIVW1KFdPM=">
+        <field:input field="siteId" id="c_biz_buildit_main_PlantHireRequest_siteId" z="32vuBkVlJ/6RCi0wjsw5C+HCkbE="/>
+        <field:select field="siteEng" id="c_biz_buildit_main_PlantHireRequest_siteEng" itemValue="id" items="${siteengineers}" path="/siteengineers" z="tw8/OOiQhn1VbcKe9FaAwAtYJyc="/>
+        <field:datetime dateTimePattern="${plantHireRequest_startdate_date_format}" field="startDate" id="c_biz_buildit_main_PlantHireRequest_startDate" z="LKCbgRoKCcHkOmNQfk336aV+q3o="/>
+        <field:datetime dateTimePattern="${plantHireRequest_enddate_date_format}" field="endDate" id="c_biz_buildit_main_PlantHireRequest_endDate" z="4ft6J4b5+zZpWPehD1THwLUbZkw="/>
+        <field:datetime dateTimePattern="${plantHireRequest_extensiondate_date_format}" field="extensionDate" id="c_biz_buildit_main_PlantHireRequest_extensionDate" z="t0CimUxOmmVLHdOzqU919GVUC2k="/>
+        <field:input field="comments" id="c_biz_buildit_main_PlantHireRequest_comments" z="s9Pn7vbc7w5YcrlQU5XP8TI/J9w="/>
+        <field:select field="plant" id="c_biz_buildit_main_PlantHireRequest_plant" itemValue="id" items="${plants}" path="/plantcatalogues" z="BA+ckT51WVHmfoeyFRwcyCLy+gE="/>
+        <field:select field="wEng" id="c_biz_buildit_main_PlantHireRequest_wEng" itemValue="id" items="${worksengineers}" path="/worksengineers" z="mx0HfBzPrzmUuamC9dJ9eaPj4h0="/>
+        <field:select field="approval" id="c_biz_buildit_main_PlantHireRequest_approval" items="${approvals}" path="approvals" z="kvRIHsd84wT/KEHaIsW1RKHPwtU="/>
+        <!--         <field:select field="purchaseOrder" id="c_biz_buildit_main_PlantHireRequest_purchaseOrder" itemValue="id" items="${purchaseorders}" path="/purchaseorders" z="+4vZWO7D5tqpmVw8ZRUeTELA4Os="/> -->
+        <!--         <field:input field="purchaseOrderURI" id="c_biz_buildit_main_PlantHireRequest_purchaseOrderURI" z="18bv0xqQ7F8tcialTCLYZY3fdQI="/> -->
+        <field:input field="purchaseOrderURI" id="c_biz_buildit_main_PlantHireRequest_purchaseOrderURI" z="18bv0xqQ7F8tcialTCLYZY3fdQI="/>
+        <field:select field="purchaseOrder" id="c_biz_buildit_main_PlantHireRequest_purchaseOrder" itemValue="id" items="${purchaseorders}" path="/purchaseorders" z="+4vZWO7D5tqpmVw8ZRUeTELA4Os="/>
+    </form:update>
+</div>

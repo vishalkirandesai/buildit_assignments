@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show delete="false" id="ps_biz_buildit_main_PlantHireRequest" object="${planthirerequest}" path="/se/phrs" z="2I8OZP/pHlskGFHTTfMZjq0iWkA=">
+        <field:display field="siteId" id="s_biz_buildit_main_PlantHireRequest_siteId" object="${planthirerequest}" z="oKANYz72vENvAcMXwMkXHegs8aw="/>
+        <field:display field="siteEng" id="s_biz_buildit_main_PlantHireRequest_siteEng" object="${planthirerequest}" z="DWPw/DOHMOYHgmzxWSuRuaA2wJI="/>
+        <field:display date="true" dateTimePattern="${plantHireRequest_startdate_date_format}" field="startDate" id="s_biz_buildit_main_PlantHireRequest_startDate" object="${planthirerequest}" z="z35MOpfNGsnFrA1GkEaL1VyADow="/>
+        <field:display date="true" dateTimePattern="${plantHireRequest_enddate_date_format}" field="endDate" id="s_biz_buildit_main_PlantHireRequest_endDate" object="${planthirerequest}" z="JkDP43YqXDQSoBNNdQwPUgb8V60="/>
+        <field:display date="true" dateTimePattern="${plantHireRequest_extensiondate_date_format}" field="extensionDate" id="s_biz_buildit_main_PlantHireRequest_extensionDate" object="${planthirerequest}" z="3PGzBbUA68DqTaQvvCO+qbq+7lY="/>
+        <field:display field="comments" id="s_biz_buildit_main_PlantHireRequest_comments" object="${planthirerequest}" z="0m565P0LkAS/+4VO6LtxzPXOjnc="/>
+        <field:display field="plant" id="s_biz_buildit_main_PlantHireRequest_plant" object="${planthirerequest}" z="eabQv6d78fZ0BOnNdq1E0hcXv8U="/>
+        <field:display field="WEng" id="s_biz_buildit_main_PlantHireRequest_wEng" object="${planthirerequest}" z="URWGzt6O923CkLLEw8YgThpZlSU="/>
+        <field:display field="approval" id="s_biz_buildit_main_PlantHireRequest_approval" object="${planthirerequest}" z="Z9wYyYP+LPeOlpNozYcamEU2r7s="/>
+        <!--         <field:display field="purchaseOrderURI" id="s_biz_buildit_main_PlantHireRequest_purchaseOrderURI" object="${planthirerequest}" z="Nbw+kz1XEIf/gUpLy7XG3GAChcM="/> -->
+        <field:display field="purchaseOrderURI" id="s_biz_buildit_main_PlantHireRequest_purchaseOrderURI" object="${planthirerequest}" z="Nbw+kz1XEIf/gUpLy7XG3GAChcM="/>
+        <field:display field="purchaseOrder" id="s_biz_buildit_main_PlantHireRequest_purchaseOrder" object="${planthirerequest}" z="skQoZRt20jdB/1h1inlIy2A2QXE="/>
+    </page:show>
+    <button>
+        <a href="${id}/cancel">Cancel</a>
+    </button>
+</div>

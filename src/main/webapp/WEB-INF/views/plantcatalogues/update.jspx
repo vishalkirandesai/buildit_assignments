@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_biz_buildit_main_Plant" modelAttribute="plant" path="/plantcatalogues" versionField="Version" z="H2W/++l5pKgyYTi3UhQbxs/6F+o=">
+        <field:input field="name" id="c_biz_buildit_main_Plant_name" z="FYEb/4HQsuOcd/zURkydupGBjvE="/>
+        <field:input field="price" id="c_biz_buildit_main_Plant_price" z="cXKb2YuswSgsfP9DD8Y8CZTTNpQ="/>
+        <field:input field="description" id="c_biz_buildit_main_Plant_description" z="ZoVZZZAYLxQXkNSQ9WMWHo7fAIs="/>
+        <field:input field="pId" id="c_biz_buildit_main_Plant_pId" validationMessageCode="field_invalid_integer" z="ABNLHBBDRiyeIedB3xJypxQ9Trc="/>
+        <field:datetime dateTimePattern="${plant_startdate_date_format}" field="startDate" id="c_biz_buildit_main_Plant_startDate" z="4Nzjpr1DUO0D6h1BaIPrEzr6E94="/>
+        <field:datetime dateTimePattern="${plant_enddate_date_format}" field="endDate" id="c_biz_buildit_main_Plant_endDate" z="YQfnDR0ln9T/Lj9DqbgeaAPPL3E="/>
+    </form:update>
+</div>

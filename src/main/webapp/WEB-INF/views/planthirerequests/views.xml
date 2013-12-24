@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="planthirerequests/list">
+        <put-attribute name="body" value="/WEB-INF/views/planthirerequests/list.jspx"/>
+    </definition>
+<definition extends="default" name="planthirerequests/show">
+        <put-attribute name="body" value="/WEB-INF/views/planthirerequests/show.jspx"/>
+    </definition>
+<definition extends="default" name="planthirerequests/create">
+        <put-attribute name="body" value="/WEB-INF/views/planthirerequests/create.jspx"/>
+    </definition>
+<definition extends="default" name="planthirerequests/update">
+        <put-attribute name="body" value="/WEB-INF/views/planthirerequests/update.jspx"/>
+    </definition>
+</tiles-definitions>
